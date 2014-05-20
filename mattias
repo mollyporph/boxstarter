@@ -1,0 +1,37 @@
+Update-ExecutionPolicy Unrestricted
+Move-LibraryDirectory "Personal" "$env:UserProfile\skydrive\documents"
+Set-ExplorerOptions -showHiddenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
+Set-TaskbarSmall
+Enable-RemoteDesktop
+
+cinst VisualStudio2013Premium
+cinst fiddler4
+cinst console-devel
+cinst windbg
+cinst PowerShell
+cinst sysinternals
+cinst notepadplusplus.install
+cinst putty.install
+cinst vmwarevsphereclient
+cinst spotify
+cinst NugetPackageManager
+cinst resharper
+
+#Mattias
+cinst adobereader
+cinst AdobeAIR
+cinst balsamiqmockups.install
+cinst filezilla
+
+
+
+cinst Microsoft-Hyper-V-All -source windowsFeatures
+cinst TelnetClient -source windowsFeatures
+
+Install-ChocolateyPinnedTaskBarItem "$env:windir\system32\mstsc.exe"
+Install-ChocolateyPinnedTaskBarItem "$env:windir\system32\WindowsPowershell\v1.0\powershell.exe"
+
+
+Install-ChocolateyVsixPackage xunit http://visualstudiogallery.msdn.microsoft.com/463c5987-f82b-46c8-a97e-b1cde42b9099/file/66837/1/xunit.runner.visualstudio.vsix
+
+Install-WindowsUpdate -AcceptEula
