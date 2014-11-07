@@ -12,22 +12,19 @@ cinst PowerShell
 cinst sysinternals
 cinst notepadplusplus.install
 cinst putty.install
-cinst vmwarevsphereclient
 cinst spotify
 cinst NugetPackageManager
 cinst resharper
 cinst mysql.workbench
 cinst nodejs
-cinst 1password
 cinst skype
 cinst 7zip.install
 cinst GoogleChrome
 cinst git-credential-winstore
 cinst git.install
+cinst steam
+cinst Teamspeak3
 
-
-
-cinst Microsoft-Hyper-V-All -source windowsFeatures
 cinst TelnetClient -source windowsFeatures
 
 Install-ChocolateyPinnedTaskBarItem "$env:windir\system32\mstsc.exe"
