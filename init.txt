@@ -26,6 +26,7 @@ cinst steam
 cinst Teamspeak3
 
 cinst TelnetClient -source windowsFeatures
+cinst Microsoft-Hyper-V-All -source windowsFeatures
 
 Install-ChocolateyPinnedTaskBarItem "$env:windir\system32\mstsc.exe"
 Install-ChocolateyPinnedTaskBarItem "$env:windir\system32\WindowsPowershell\v1.0\powershell.exe"
